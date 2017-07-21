@@ -1,5 +1,14 @@
 # Assignment
 
+## Motivation of my choice
+
+I created a responsive and asynchronous carousel using Angular 4 , Type script, HTML 5 and CSS3.
+Angular, which has always been my favorite JavaScript framework, decided to componentize everything
+It is an independent carousel component which loads its content via HTTP service asynchronously.
+It play automatically with given interval as well as with user navigation.
+Tested with unit test and end to end test. With help of webpack bundler  this project builds an optimized  and efficient carousel component.
+
+
 ## clone the repo
 
 Run `git clone git@github.com:kingmahendra/KLM-Case-Assignment.git` command
