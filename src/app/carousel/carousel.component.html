@@ -1,0 +1,21 @@
+<div class="slideshow-container" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+
+  <button class="toggle" (click)="toggleAuto()" >
+    <span *ngIf="autoPlay"> pause </span>
+    <span *ngIf="!autoPlay"> play </span>
+  </button>
+  <div class="mySlides fade" >
+    <div class="blocktext">{{current.title}}</div>
+    <img *ngIf="current.url" src="../assets{{current.url}}" style="width:100%">
+    <div class="placeholder"><img src="../assets/static.png"></div>
+  </div>
+
+  <div class="controls" [style.visibility]="controlsVisible" >
+	  <a class="prev" (click)="prevSlides()">&#10094;</a>
+	  <a class="next" (click)="nextSlides()">&#10095;</a>
+
+	  <p class="bullet">
+		<span class="dot" [ngClass]="{'active': slideIndex === i}" (click)="currentSlide(i)" *ngFor="let item of slidesData; let i = index"></span>
+	  </p>
+  </div>
+</div>
