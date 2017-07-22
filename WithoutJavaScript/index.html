@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carosel without Java Script</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="slide">
+    <div class="blocktext">Some additional content will come here. Just putting a placeholder</div>
+    <div class="placeholder"><img src="carousel/static.png"></div>
+    <div class="slide-inner">
+        <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+        <div class="slide-item">
+            <img src="carousel/home1.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="carousel/home2.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="carousel/home3.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="carousel/home4.jpg">
+        </div>
+        <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+        <div class="slide-item">
+            <img src="carousel/home5.jpg">
+        </div>
+        <label for="slide-5" class="slide-control prev control-1">&#10094;</label>
+        <label for="slide-2" class="slide-control next control-1">&#10095;</label>
+        <label for="slide-1" class="slide-control prev control-2">&#10094;</label>
+        <label for="slide-3" class="slide-control next control-2">&#10095;</label>
+        <label for="slide-2" class="slide-control prev control-3">&#10094;</label>
+        <label for="slide-4" class="slide-control next control-3">&#10095;</label>
+        <label for="slide-3" class="slide-control prev control-4">&#10094;</label>
+        <label for="slide-5" class="slide-control next control-4">&#10095;</label>
+        <label for="slide-4" class="slide-control prev control-5">&#10094;</label>
+        <label for="slide-1" class="slide-control next control-5">&#10095;</label>
+        <ol class="slide-indicators">
+            <li>
+                <label for="slide-1" class="slide-bullet">•</label>
+            </li>
+            <li>
+                <label for="slide-2" class="slide-bullet">•</label>
+            </li>
+            <li>
+                <label for="slide-3" class="slide-bullet">•</label>
+            </li>
+            <li>
+                <label for="slide-4" class="slide-bullet">•</label>
+            </li>
+            <li>
+                <label for="slide-5" class="slide-bullet">•</label>
+            </li>
+        </ol>
+    </div>
+</div>
+</body>
+</html>
