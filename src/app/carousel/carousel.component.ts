@@ -75,18 +75,19 @@ export class CarouselComponent implements AfterViewInit, OnInit {
    * Moves to previous slide
    */
   prevSlides() {
-    // clearInterval(this.interval);
-    this.showSlides(this.slideIndex -= 1);
-    // this.autoPlay = true;
+    if (this.autoPlay) {
+      clearInterval(this.interval);
+      this.showSlides(this.slideIndex -= 2)
+    } else {
+      this.showSlides(this.slideIndex -= 1);
+    }
   }
 
   /**
    * Moves to next slide
    */
   nextSlides() {
-    // clearInterval(this.interval);
     this.showSlides(this.slideIndex += 1);
-    // this.autoPlay = true;
   }
 
   /**
